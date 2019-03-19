@@ -22,7 +22,7 @@ public class AlienDictionary {
 		Word w = new Word(aw,tw);
 		
 		//for(Word wtemp : dictionary) {
-			//if(wtemp.getAlienWord().compareTo(aw) == 0) PERCHE' NON FUNZIONA ?
+			//if(wtemp.getAlienWord().compareTo(aw) == 0) NON !!
 		
 		if(dictionary.contains(w)) {
 				dictionary.get(dictionary.indexOf(w)).setTranslation(tw);
@@ -40,7 +40,7 @@ public class AlienDictionary {
 		
 			if(dictionary.contains(w)) {
 				// return wtemp.getTranslation();
-				//provato a farlo con compareTo delle parole non va !
+				// con compareTo delle parole non va !
 				return dictionary.get(dictionary.indexOf(w)).getTranslation();
 		}
 		return null;
